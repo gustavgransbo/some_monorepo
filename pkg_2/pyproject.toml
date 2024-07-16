@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pkg_2"
+version = "0.1.0"
+description = ""
+authors = ["Jonathan Rayner <jonathan.j.rayner@gmail.com>"]
+packages = [{ include = "pkg_2"}]
+include = [{ path = "random_file_2.bin"}]
+            
+[tool.poetry.dependencies]
+python = "^3.10 <3.13"
+numpy = "^1.21.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

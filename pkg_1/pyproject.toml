@@ -1,13 +1,14 @@
 [tool.poetry]
-name = "pkg-b"
+name = "pkg_1"
 version = "0.1.0"
 description = ""
 authors = ["Jonathan Rayner <jonathan.j.rayner@gmail.com>"]
-readme = "README.md"
-
+packages = [{ include = "pkg_1"}]
+include = [{ path = "random_file_1.bin"}]
+            
 [tool.poetry.dependencies]
-python = ">=3.11 <3.13"
-
+python = "^3.10 <3.13"
+numpy = "^1.21.2"
 
 [build-system]
 requires = ["poetry-core"]
